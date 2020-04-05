@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyService</string>
+    <string name="start_service">Start Service</string>
+    <string name="start_intent_service">start intent service</string>
+    <string name="start_bound_service">start bound service</string>
+    <string name="stop_bound_service">stop bound service</string>
+</resources>

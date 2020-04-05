@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/pixel_google" />
+
+            <TextView
+                style="@style/TextContent.Small.White"
+                android:layout_gravity="bottom"
+                android:background="#4D000000"
+                android:drawableLeft="@drawable/ic_collections_white_18dp"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:text="6 Photos"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+        </FrameLayout>
+
+        <TextView
+            style="@style/TextContent.Black"
+            android:textSize="32sp"
+            android:text="$735"
+            android:lineSpacingExtra="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="20dp"
+            android:text="Stock hanya 5 buah"
+            android:lineSpacingExtra="5dp"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/content_text"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="20dp"
+            android:lineSpacingExtra="5dp"
+            android:lineSpacingMultiplier="1"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Spesifikasi"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="12sp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Display"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="3dp"
+                    android:layout_weight="1"
+                    android:text="@string/content_specs_display"
+                    android:textColor="@android:color/black"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Size"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="3dp"
+                    android:layout_weight="1"
+                    android:text="@string/content_specs_size"
+                    android:textColor="@android:color/black"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Battery"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="3dp"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="@string/content_specs_battery"
+                    android:textColor="@android:color/black"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/seller"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="12sp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="20dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/photo_2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/profile_image"
+                android:layout_toRightOf="@id/profile_image"
+                android:text="@string/my_name"
+                android:textColor="@android:color/black" />
+        </RelativeLayout>
+
+        <Button
+            android:background="@drawable/bg_btn_beli"
+            style="@style/ButtonGeneral"
+            android:text="@string/buy" />
+
+    </LinearLayout>
+
+
+</ScrollView>
